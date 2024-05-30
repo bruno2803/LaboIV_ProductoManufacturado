@@ -71,15 +71,26 @@ export const ButtonsTable = ({
       }}
     >
       {/*AGREGAR AL CARRITO*/}
-      <Button
+      {el.alta === false ? (
+        <Button
         variant="contained" 
         onClick={() => !disabled && handleCartShopItem}
         style={{
           backgroundColor: disabled ? 'gray' : 'blue',
           cursor: disabled ? 'not-allowed' : 'pointer',
-        }}>
+        }}
+        disabled={disabled}
+        >
+        <span className="material-symbols-outlined">shopping_cart</span>
+        </Button>
+      ) : (
+        <Button
+        variant="contained" 
+        onClick={handleCartShopItem}
+        >
         <span className="material-symbols-outlined">shopping_cart</span>
       </Button>
+      )}
       {/*
       ALTA Y BAJA 
       {el.alta === true ? (

@@ -301,6 +301,66 @@
           "cantidad": 250
         }
       ]
+    },
+    {
+      "id": "3",
+      "alta": true,
+      "categoria": {
+        "id": "2",
+        "denominacion": "Papas",
+        "categorias_hijas": null
+      },
+      "denominacion": "Papas con cheddar",
+      "precioVenta": "4500",
+      "tiempoEstimadoMinutos": "15",
+      "descripción": "Papas con cheddar caseras.",
+      "receta": "Cortar papas, freirlar, calentar el cheddar.",
+      "ingredientes": [
+        {
+          "id": 1,
+          "denominacion": "Mozzarella",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 1,
+            "denominacion": "Quesos"
+          },
+          "cantidad": 250
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "alta": false,
+      "categoria": {
+        "id": "2",
+        "denominacion": "Papas",
+        "categorias_hijas": null
+      },
+      "denominacion": "Papas con cheddar",
+      "precioVenta": "4500",
+      "tiempoEstimadoMinutos": "15",
+      "descripción": "Papas con cheddar caseras.",
+      "receta": "Cortar papas, freirlar, calentar el cheddar.",
+      "ingredientes": [
+        {
+          "id": 1,
+          "denominacion": "Mozzarella",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 1,
+            "denominacion": "Quesos"
+          },
+          "cantidad": 250
+        }
+      ]
     }
   ]
 }

@@ -62,7 +62,7 @@ export const Grilla = () => {
   return (
     <>
       <div className="Grilla">
-        <div className="row">
+        <div className="row" style={{marginBottom:'25px', padding:'10px', border:'1px solid #BCBCBC', borderRadius:'5px'}}>
           <div className="col">
             <b>ID</b>
           </div>
@@ -82,14 +82,14 @@ export const Grilla = () => {
             <b>Descripcion</b>
           </div>
           <div className="col">
-            <b>Acciones</b>
+            <b>Carrito</b>
           </div>
         </div>
         {productos.map((product: Productos) => (
           <div className="row" key={product.id}>
             <div className="col">
               <img
-                style={{ width: "50px" }}
+                style={{ width: "55px" }}
                 src={product.img}
                 className="img-fluid rounded-start"
                 alt="..."
@@ -102,8 +102,8 @@ export const Grilla = () => {
             <div className="col">{product.descripción}</div>
             <div className="col">
               <a
-                className="btn btn-info"
-                style={{ marginBottom: 10 }}
+                className="btn"
+                style={{ margin: 10, color: '#FFF', background: '#E66200'}}
                 onClick={() => addCarrito(product)}
               >
                 <i className="fas fa-shopping-cart"></i>

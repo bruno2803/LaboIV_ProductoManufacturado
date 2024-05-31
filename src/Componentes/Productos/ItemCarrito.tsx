@@ -44,22 +44,23 @@ function ItemCarrito(args: ProductosParams) {
                 Tiempo estimado: {args.tiempoEstimadoMinutos}
               </h5>
               <a
-                className="btn btn-primary"
+                className="btn"
                 onClick={() => removeItemCarrito(args.ProductoObject)}
-                style={{ marginRight: "5px" }}
+                style={{ marginRight: "5px", color: '#fff', background: '#E66200', border: '1px solid #E66200'}}
               >
                 <RemoveIcon />
               </a>
               <a
-                className="btn btn-primary"
+                className="btn"
                 onClick={() => {
                   isPlatoInCarrito
                     ? removeCarrito(args.ProductoObject)
                     : addCarrito(args.ProductoObject);
                 }}
+                style={{ margin: "4px", color: '#E66200', background: '#fff', border: '1px solid #E66200'}}
               >
                 {isPlatoInCarrito ? (
-                  <i className="fas fa-cart-arrow-down"></i>
+                  <i className="fas fas fa-times"></i>
                 ) : (
                   <i className="fas fa-shopping-cart"></i>
                 )}
@@ -67,7 +68,7 @@ function ItemCarrito(args: ProductosParams) {
               <a
                 className="btn btn-primary"
                 onClick={() => addCarrito(args.ProductoObject)}
-                style={{ marginLeft: "5px" }}
+                style={{ marginLeft: "5px", color: '#fff', background: '#E66200', border: '1px solid #E66200'}}
               >
                 <AddIcon />
               </a>

@@ -32,25 +32,28 @@ export const Carrito = () => {
       <div
         style={{
           maxHeight: "20px",
-          marginTop: "60px",
+          marginTop: "100px",
           display: "flex",
+          alignItems: 'center',
+          justifyContent:'center',
         }}
       >
-        <p style={{ margin: 0 }}>Carrito de compras</p>
+        <p style={{ margin: 10 }}>CARRITO DE COMPRAS:</p>
         <Button
           variant="outlined"
           size="small"
-          style={{ marginLeft: "auto" }}
+          style={{ margin: "10px" }}
           onClick={limpiarCarrito}
         >
           Vaciar carrito
         </Button>
-        <Button variant="outlined" size="small" style={{ marginLeft: "auto" }}>
+        <Button variant="outlined" size="small" style={{ margin: "10px" }}>
           Enviar Pedido
         </Button>
       </div>
+      <div style={{display: 'flex', padding: '30px', alignItems: 'center', justifyContent:'center'}}>
       {cart.length === 0 ? (
-        <p>El carrito está vacío</p>
+        <p style={{color:'red'}}>¡EL CARRITO ESTA VACIO!</p>
       ) : (
         cart.map((product: Productos) => (
           <ItemCarrito
@@ -67,6 +70,7 @@ export const Carrito = () => {
           ></ItemCarrito>
         ))
       )}
+      </div>
     </>
   );
 };

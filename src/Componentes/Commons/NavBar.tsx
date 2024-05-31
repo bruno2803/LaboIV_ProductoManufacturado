@@ -10,13 +10,13 @@ export const NavBar = () => {
     tiene = true;
   }
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top" style={{padding:'12px', background:'#E66200'}}>
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/Grilla">
-                Grilla de Productos
+              <a className="nav-link" href="/Grilla" style={{color:'#FFF'}}>
+                GRILLA DE PRODUCTOS
               </a>
             </li>
           </ul>
@@ -25,12 +25,12 @@ export const NavBar = () => {
           <a
             className="nav-link"
             href="/Carrito"
-            style={{ marginRight: "20px" }}
+            style={{ marginRight: "20px", padding: '10px', color:'#E66200', background:'#FFF', borderRadius:'5px'}}
           >
             <i className="fas fa-shopping-cart"></i>
             {tiene && (
-              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                1
+              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill" style={{background:'green'}}>
+                !
               </span>
             )}
           </a>

@@ -77,9 +77,9 @@ export const ButtonsTable = ({
         onClick={() => !disabled && handleCartShopItem}
         style={{
           backgroundColor: disabled ? 'gray' : 'blue',
+          color: disabled ? '#8A8B8C' : "white",
           cursor: disabled ? 'not-allowed' : 'pointer',
         }}
-        disabled={disabled}
         >
         <span className="material-symbols-outlined">shopping_cart</span>
         </Button>

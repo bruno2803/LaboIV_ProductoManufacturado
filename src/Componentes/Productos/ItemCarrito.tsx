@@ -27,7 +27,7 @@ function ItemCarrito(args: ProductosParams) {
   const isPlatoInCarrito = verificaPlatoEnCarrito(args.ProductoObject);
   return (
     <>
-      <div className="card mb-3" style={{ width: "600px", marginTop: "20px" }}>
+      <div className="card mb-3" style={{display: 'flex',alignItems: 'center', justifyContent:'center',height: '200px', width: "400px", marginTop: "30px" }}>
         <div className="row g-0">
           <div className="col-md-4">
             <img

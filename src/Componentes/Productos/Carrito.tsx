@@ -51,9 +51,9 @@ export const Carrito = () => {
           Enviar Pedido
         </Button>
       </div>
-      <div style={{display: 'flex', padding: '30px', alignItems: 'center', justifyContent:'center'}}>
+      <div style={{padding: '30px', alignItems: 'center', justifyContent:'center'}}>
       {cart.length === 0 ? (
-        <p style={{color:'red'}}>¡EL CARRITO ESTA VACIO!</p>
+        <p style={{marginLeft: '125px', color:'red'}}>¡EL CARRITO ESTA VACIO!</p>
       ) : (
         cart.map((product: Productos) => (
           <ItemCarrito

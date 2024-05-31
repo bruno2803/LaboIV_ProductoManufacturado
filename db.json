@@ -1,19 +1,366 @@
 {
-  "posts": [
+  "categorias_comida": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": "1",
+      "denominacion": "Pizzas",
+      "categorias_hijas": null
+    },
+    {
+      "id": "2",
+      "denominacion": "Papas",
+      "categorias_hijas": null
+    },
+    {
+      "id": "3",
+      "denominacion": "Hamburguesas",
+      "categorias_hijas": null
+    },
+    {
+      "id": "4",
+      "denominacion": "Carnes",
+      "categorias_hijas": null
+    },
+    {
+      "id": "5",
+      "denominacion": "Ensaladas",
+      "categorias_hijas": null
     }
   ],
-  "comments": [
+  "categorias_insumos": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "1",
+      "denominacion": "Quesos",
+      "categorias_hijas": null
+    },
+    {
+      "id": "2",
+      "denominacion": "Salsas",
+      "categorias_hijas": null
+    },
+    {
+      "id": "3",
+      "denominacion": "Vegetales",
+      "categorias_hijas": null
+    },
+    {
+      "id": "4",
+      "denominacion": "Carnes",
+      "categorias_hijas": null
+    },
+    {
+      "id": "5",
+      "denominacion": "Especias",
+      "categorias_hijas": null
+    },
+    {
+      "id": "6",
+      "denominacion": "Masas",
+      "categorias_hijas": null
+    },
+    {
+      "id": "7",
+      "denominacion": "Frutas",
+      "categorias_hijas": null
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "unidad_medidas": [
+    {
+      "id": "1",
+      "denominacion": "gramos",
+      "abreviatura": "gr"
+    },
+    {
+      "id": "2",
+      "denominacion": "kilogramo",
+      "abreviatura": "kg"
+    },
+    {
+      "id": "3",
+      "denominacion": "taza",
+      "abreviatura": "tz"
+    },
+    {
+      "id": "4",
+      "denominacion": "pizca",
+      "abreviatura": "pz"
+    },
+    {
+      "id": "5",
+      "denominacion": "mililitros",
+      "abreviatura": "mm"
+    },
+    {
+      "id": "6",
+      "denominacion": "litros",
+      "abreviatura": "l"
+    },
+    {
+      "id": "7",
+      "abreviatura": "ud",
+      "denominacion": "unidad"
+    },
+    {
+      "id": "8",
+      "abreviatura": "cucharada",
+      "denominacion": "cucharada"
+    },
+    {
+      "id": "9",
+      "abreviatura": "rd",
+      "denominacion": "rodaja"
+    }
+  ],
+  "insumos": [
+    {
+      "id": "1",
+      "denominacion": "Mozzarella",
+      "unidadMedida": {
+        "id": 1,
+        "denominacion": "gramos",
+        "abreviatura": "gr"
+      },
+      "categoria": {
+        "id": 1,
+        "denominacion": "Quesos"
+      },
+      "cantidad": 1000
+    },
+    {
+      "id": "2",
+      "denominacion": "Tomate",
+      "unidadMedida": {
+        "id": 7,
+        "abreviatura": "ud",
+        "denominacion": "unidad"
+      },
+      "categoria": {
+        "id": 3,
+        "denominacion": "Vegetales"
+      },
+      "cantidad": 1000
+    },
+    {
+      "id": "3",
+      "denominacion": "Salsa de tomate",
+      "unidadMedida": {
+        "id": 8,
+        "abreviatura": "cucharada",
+        "denominacion": "cucharada"
+      },
+      "categoria": {
+        "id": 2,
+        "denominacion": "Salsas"
+      },
+      "cantidad": 1000
+    },
+    {
+      "id": "4",
+      "denominacion": "Carne de res",
+      "unidadMedida": {
+        "id": 1,
+        "denominacion": "gramos",
+        "abreviatura": "gr"
+      },
+      "categoria": {
+        "id": 4,
+        "denominacion": "Carnes"
+      },
+      "cantidad": 1000
+    },
+    {
+      "id": "5",
+      "denominacion": "Orégano",
+      "unidadMedida": {
+        "id": 4,
+        "denominacion": "pizca",
+        "abreviatura": "pz"
+      },
+      "categoria": {
+        "id": 5,
+        "denominacion": "Especias"
+      },
+      "cantidad": 1000
+    },
+    {
+      "id": "6",
+      "denominacion": "Masa de pizza",
+      "unidadMedida": {
+        "id": 7,
+        "abreviatura": "unidad",
+        "denominacion": "ud"
+      },
+      "categoria": {
+        "id": 6,
+        "denominacion": "Masas",
+        "categorias_hijas": null
+      },
+      "cantidad": 1000
+    },
+    {
+      "id": "7",
+      "denominacion": "Piña",
+      "unidadMedida": {
+        "id": "9",
+        "abreviatura": "rd",
+        "denominacion": "rodajas"
+      },
+      "categoria": {
+        "id": 7,
+        "denominacion": "Frutas",
+        "categorias_hijas": null
+      },
+      "cantidad": 1000
+    }
+  ],
+  "producto_manufacturado": [
+    {
+      "id": "1",
+      "alta": false,
+      "categoria": {
+        "id": "3",
+        "denominacion": "Hamburguesas",
+        "categorias_hijas": null
+      },
+      "denominacion": "Chesse Burguer",
+      "precioVenta": "7500",
+      "tiempoEstimadoMinutos": "25",
+      "descripción": "Hamburugesa doble carne, doble cheddar",
+      "receta": "se calienta el pan, se frien las patys",
+      "ingredientes": [
+        {
+          "id": 1,
+          "denominacion": "Mozzarella",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 1,
+            "denominacion": "Quesos"
+          },
+          "cantidad": 200
+        },
+        {
+          "id": 2,
+          "denominacion": "Carne de res",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 4,
+            "denominacion": "Carnes"
+          },
+          "cantidad": 400
+        },
+        {
+          "id": 3,
+          "denominacion": "Masa de pizza",
+          "unidadMedida": {
+            "id": 7,
+            "abreviatura": "unidad",
+            "denominacion": "ud"
+          },
+          "categoria": {
+            "id": 6,
+            "denominacion": "Masas",
+            "categorias_hijas": null
+          },
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "alta": true,
+      "categoria": {
+        "id": "2",
+        "denominacion": "Papas",
+        "categorias_hijas": null
+      },
+      "denominacion": "Papas con cheddar",
+      "precioVenta": "4500",
+      "tiempoEstimadoMinutos": "15",
+      "descripción": "Papas con cheddar caseras.",
+      "receta": "Cortar papas, freirlar, calentar el cheddar.",
+      "ingredientes": [
+        {
+          "id": 1,
+          "denominacion": "Mozzarella",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 1,
+            "denominacion": "Quesos"
+          },
+          "cantidad": 250
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "alta": true,
+      "categoria": {
+        "id": "2",
+        "denominacion": "Papas",
+        "categorias_hijas": null
+      },
+      "denominacion": "Papas con cheddar",
+      "precioVenta": "4500",
+      "tiempoEstimadoMinutos": "15",
+      "descripción": "Papas con cheddar caseras.",
+      "receta": "Cortar papas, freirlar, calentar el cheddar.",
+      "ingredientes": [
+        {
+          "id": 1,
+          "denominacion": "Mozzarella",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 1,
+            "denominacion": "Quesos"
+          },
+          "cantidad": 250
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "alta": false,
+      "categoria": {
+        "id": "2",
+        "denominacion": "Papas",
+        "categorias_hijas": null
+      },
+      "denominacion": "Papas con cheddar",
+      "precioVenta": "4500",
+      "tiempoEstimadoMinutos": "15",
+      "descripción": "Papas con cheddar caseras.",
+      "receta": "Cortar papas, freirlar, calentar el cheddar.",
+      "ingredientes": [
+        {
+          "id": 1,
+          "denominacion": "Mozzarella",
+          "unidadMedida": {
+            "id": 1,
+            "denominacion": "gramos",
+            "abreviatura": "gr"
+          },
+          "categoria": {
+            "id": 1,
+            "denominacion": "Quesos"
+          },
+          "cantidad": 250
+        }
+      ]
+    }
+  ]
 }

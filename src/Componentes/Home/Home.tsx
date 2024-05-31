@@ -4,19 +4,16 @@ export const Home = () => {
     <>
       <div className="Instrumentos"></div>
       <div>
-        <h1>Tienda Hendrix</h1>
+        <h1>El Buen Sabor</h1>
         <div className="Imagen">
           <img
-            src="https://i.multisononline.com/blog/wp-content/uploads/2024/01/guitarras-electricas-historicas.jpg"
-            alt=""
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPY9z1qFAnjFh8PDp926ttOTtXjjwH9yjApg&s"
+            alt="El Buen Sabor"
           />
         </div>
         <div>
           <h2>
-            Tienda Hendrix es una tienda de instrumentos musicales con ya más de
-            15 años de experiencia. Tenemos el conocimiento y la capacidad como
-            para informarte acerca de las mejores elecciones para tu compra
-            musical.
+            Tu mejor lugar para pedir comida.
           </h2>
         </div>
       </div>

@@ -64,13 +64,13 @@ export const Grilla = () => {
       <div className="Grilla">
         <div className="row" style={{marginBottom:'25px', padding:'10px', border:'1px solid #BCBCBC', borderRadius:'5px'}}>
           <div className="col">
-            <b>ID</b>
+            <b>Imagen</b>
           </div>
           <div className="col">
-            <b>Denom.</b>
+            <b>Producto</b>
           </div>
           <div className="col">
-            <b>categoria</b>
+            <b>Categoría</b>
           </div>
           <div className="col">
             <b>Precio</b>
@@ -79,7 +79,7 @@ export const Grilla = () => {
             <b>Tiempo</b>
           </div>
           <div className="col">
-            <b>Descripcion</b>
+            <b>Descripción</b>
           </div>
           <div className="col">
             <b>Carrito</b>
@@ -97,7 +97,7 @@ export const Grilla = () => {
             </div>
             <div className="col">{product.denominacion}</div>
             <div className="col">{product.categoria}</div>
-            <div className="col">{product.precioVenta}</div>
+            <div className="col">${product.precioVenta}</div>
             <div className="col">{product.tiempoEstimadoMinutos} min</div>
             <div className="col">{product.descripción}</div>
             <div className="col">
